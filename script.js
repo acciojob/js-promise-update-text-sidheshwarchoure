@@ -9,7 +9,7 @@ function updateText(params) {
 }
 
 updateText.then((result)=>{
-	const Output = document.getElementById("output");
-	Output.innerText = result;
+	const output = document.getElementById("output");
+	output.innerText = result;
 })
 
