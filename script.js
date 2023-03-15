@@ -1,5 +1,5 @@
 //your JS code here. If required.
-function updateText(params) {
+function updateText() {
 	return new Promise((resolve,reject)=>{
 	setTimeout(()=>{
 	resolve("Hello world!");
@@ -8,7 +8,7 @@ function updateText(params) {
 });
 }
 
-updateText.then((result)=>{
+updateText().then((result)=>{
 	const output = document.getElementById("output");
 	output.innerText = result;
 })
